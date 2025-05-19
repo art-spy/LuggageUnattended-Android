@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent">
+
+ 
+    
+<Button
+    android:id="@+id/button_Location"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:text="On" />
+
+<Button
+    android:id="@+id/button_luggage"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentRight="true"
+    android:text="Off" />    
+    
+    
+<Button
+    android:id="@+id/button_search"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Search for listener" 
+	android:layout_above="@id/button_Location"/>    
+    
+    
+<Button
+android:id="@+id/button_listen"
+android:text="Listen for connection"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:layout_above="@id/button_search"
+/>
+
+<ListView
+    android:id="@+id/list_discovered"
+    android:layout_width="fill_parent"
+    android:layout_height="200dp"
+    android:layout_above="@id/button_listen" />
+
+
+<TextView
+    android:id="@+id/lbleins"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_alignRight="@+id/button_Location"
+    android:layout_marginRight="14dp"
+    android:layout_marginTop="14dp"
+    android:text="Verbindung:"
+    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+<TextView
+    android:id="@+id/txtlocX"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignRight="@+id/lbleins"
+    android:layout_below="@+id/lbleins"
+    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+<TextView
+    android:id="@+id/txtlugX"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignRight="@+id/lblzwei"
+    android:layout_below="@+id/lblzwei"
+    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+<TextView
+    android:id="@+id/lblzwei"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBaseline="@+id/lbleins"
+    android:layout_alignBottom="@+id/lbleins"
+    android:layout_alignLeft="@+id/button_luggage"
+    android:text="Entfernung:"
+    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+<Button
+    android:id="@+id/buttonRefresh"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/list_discovered"
+    android:layout_centerHorizontal="true"
+    android:enabled="false"
+    android:text="Entfernung" />
+
+/>
+
+</RelativeLayout>

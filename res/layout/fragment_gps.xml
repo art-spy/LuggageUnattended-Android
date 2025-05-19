@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/txtEntfernung"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+<Button
+    android:id="@+id/button_Location"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:text="Location" />
+
+<Button
+    android:id="@+id/button_luggage"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentRight="true"
+    android:text="Luggage" />
+
+<TextView
+    android:id="@+id/lbleins"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_alignRight="@+id/button_Location"
+    android:layout_marginRight="14dp"
+    android:layout_marginTop="14dp"
+    android:text="Location:"
+    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+<TextView
+    android:id="@+id/txtlugX"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignRight="@+id/lblzwei"
+    android:layout_below="@+id/lblzwei"
+    android:text="0"
+    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+<TextView
+    android:id="@+id/lblzwei"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBaseline="@+id/lbleins"
+    android:layout_alignBottom="@+id/lbleins"
+    android:layout_alignLeft="@+id/button_luggage"
+    android:text="Luggage:"
+    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+<TextView
+    android:id="@+id/txtlocX"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBaseline="@+id/txtlugX"
+    android:layout_alignBottom="@+id/txtlugX"
+    android:layout_alignRight="@+id/lbleins"
+    android:layout_marginRight="38dp"
+    android:text="0"
+    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+<TextView
+    android:id="@+id/txtlocY"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/txtlocX"
+    android:layout_below="@+id/txtlugX"
+    android:layout_marginTop="30dp"
+    android:text="0"
+    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+<Button
+    android:id="@+id/button_entfernung"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/button_Location"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="50dp"
+    android:text="Entfernung" />
+
+<TextView
+    android:id="@+id/txtlugY"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBaseline="@+id/txtlocY"
+    android:layout_alignBottom="@+id/txtlocY"
+    android:layout_alignLeft="@+id/txtlugX"
+    android:text="0"
+    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+<TextView
+    android:id="@+id/txtEntfern"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/button_entfernung"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="36dp"
+    android:text="0"
+    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+/>
+
+</RelativeLayout>
